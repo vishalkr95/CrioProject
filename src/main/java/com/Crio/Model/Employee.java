@@ -13,16 +13,14 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @JsonProperty("employee_name") // Covers the need for @JsonProperty annotation
+    @JsonProperty("employee_name")
     private String name;
 
-    @JsonProperty("employee_designation") // Covers the need for @JsonProperty annotation
+    @JsonProperty("employee_designation") 
     private String designation;
 
-    @JsonProperty("employee_salary") // Covers the need for @JsonProperty annotation
+    @JsonProperty("employee_salary") 
     private double salary;
-
-    // Constructors, getters, and setters
 
     public Long getId() {
 		return id;
